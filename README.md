@@ -1,3 +1,5 @@
+[한국어](https://github.com/JunyHarang-Open-Source-project/Data-Aes-Secret/blob/master/README.md) | [For English](https://github.com/JunyHarang-Open-Source-project/Data-Aes-Secret/blob/master/README.en.md)
+
 # data-aes-secret
 - - -
 
