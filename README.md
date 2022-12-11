@@ -1,6 +1,7 @@
 [한국어](https://github.com/JunyHarang-Open-Source-project/Data-Aes-Secret/blob/master/README.md) | [For English](https://github.com/JunyHarang-Open-Source-project/Data-Aes-Secret/blob/master/README.en.md)
 
 # data-aes-secret
+[![](https://jitpack.io/v/JunyHarang-Open-Source-project/Data-Aes-Secret.svg)](https://jitpack.io/#JunyHarang-Open-Source-project/Data-Aes-Secret)
 - - -
 
 ### 무엇을 할 수 있나요?
@@ -24,16 +25,23 @@ allprojects {
 ```groovy
 dependencies {
     ...
-    implementation 'com.github.JunyHarang-Open-Source-project:Data-Aes-Secret:1.0.0b'
+    implementation 'com.github.JunyHarang-Open-Source-project:Data-Aes-Secret:1.1.0b'
     ...
 }
 ```
 
 #### 어떻게 사용하나요?
+* 1️⃣ 난수값을 이용하여 Key(encryptionKey) 만들기
+```java
+    String encryptionKeyValue = RandomValue.createRandomValue();
+    String encryptionKey = DataAesSecret.base64Encoder(encryptionKeyValue);
+```
+
+* 2️⃣ 암/복호화 진행
 ```java
 public void test() {
-    String encryptionContent=DataAesSecret.aesSecret(algorithmLength,encryptionKey,plainText,1);
-    String decryptionBoardContent=DataAesSecret.aesSecret(algorithmLength,encryptionKey,encryptionContent,2);
+    String encryptionValue = DataAesSecret.aesSecret(algorithmLength, encryptionKey, plainText, 1);
+    String decryptionValue = DataAesSecret.aesSecret(algorithmLength, encryptionKey, encryptionContent, 2);
 }
 ```
 
