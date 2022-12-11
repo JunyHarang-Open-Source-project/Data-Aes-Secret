@@ -42,7 +42,7 @@ dependencies {
 public void test() {
         String encryptionValue = DataAesSecret.aesSecret(algorithmLength, encryptionKey, plainText, 1);
         String decryptionValue = DataAesSecret.aesSecret(algorithmLength, encryptionKey, encryptionContent, 2);
-        }
+}
 ```
 
 If you want more and detail please visit here [data-aes-secret Used Manual](https://junyharang.tistory.com/364)
