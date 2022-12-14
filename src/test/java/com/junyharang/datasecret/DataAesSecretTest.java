@@ -41,7 +41,7 @@ class DataAesSecretTest {
         String encryptionKeyValue = RandomValue.createRandomValue();
         System.out.println("반환된 난수 값(Return Random Value) : " + encryptionKeyValue);
 
-        String plainText = "JunyHarang's OpenSource Project";
+        String plainText = "JunyHarang's OpenSource Project Test";
         int[] algorithmLengthArray = {5, 128, 192, 256};
 
         String encryptionKey = DataAesSecret.base64Encoder(encryptionKeyValue);
