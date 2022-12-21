@@ -4,6 +4,7 @@ on:
     branches:
       - master  # or the name of your main branch
       - analysis
+      - test/*
 
 jobs:
   build:
