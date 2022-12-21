@@ -2,8 +2,8 @@ name: JunyHarangSonarPRDecorationTest
 on:
   push:
     branches:
-      - master
-      - analysis # or the name of your main branch
+      - master  # or the name of your main branch
+      - analysis
 
 jobs:
   build:
